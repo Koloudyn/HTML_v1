@@ -1,0 +1,234 @@
+<html>
+<head>
+<title>
+</title>
+</head>
+<body background="Снимок экрана (3).png" text="white">
+<div align="center">
+    <h2><font size="10" color="MediumPurple">Космос</font></h2>
+    <hr>
+    <br><a href="main.html">Главная страница</a>
+    <a href="gallery.html">Галерея</a>
+</div>
+<div>
+	<font align="justify" size="5">
+	<p>
+	Спектральный класс звезды определяется по наличию и интенсивности различных линий поглощения в спектре звезды, которые возникают в результате 
+	переходов электронов между определёнными уровнями энергии. Частота этих переходов и их возможность сильно зависит от температуры, 
+	поэтому спектральный класс также оказывается связан с температурой.
+	<br>
+	Таким образом, температура на поверхности звезды, её спектральный класс и показатель цвета оказываются взаимосвязанными. 
+	<br>
+	Ниже приведена таблица, показывающая связь между спектральным классом, эффективной температурой и показателем цвета B−V для звёзд главной последовательности.
+	</p>
+    <div align="center">
+	<details>
+    <summary> График </summary>
+    <form>
+        <table>
+          <tbody><tr>
+            <th>Значениe по оси OX</th>
+            <th>Результат</th>
+          </tr>
+          <tr>
+            <td>
+              <input type="radio" name="ox" value="0"><font color="lavender">Спектральный класс</font><br>
+            </td>
+            <td>
+              <input type="checkbox" name="oy" value="0"><font color="lavender">Абсолютная звездная светимость</font><br>
+            </td>
+          </tr>
+        </tbody>
+		</table>
+		<input type="button" value="Построить">
+		<p>Здесь будет график</p>
+	</form>	
+</details>
+<details>
+    <summary> Фильтр</summary>
+    <form>
+        <p>
+           <label for="structure">Название:</label>
+		   <input type="text" name="structure">
+        </p>
+        <!--<p>
+		    <label for="category">Светимость:</label>
+			           от <input type="text" name="yFrom"> до <input type="text" name="yFo">
+            
+        </p>
+        <p>
+		   <label for="country">Температура:</label>
+		              от <input type="text" name="yFrom"> до <input type="text" name="yFo">
+        
+        </p>-->
+		 <p>
+		   <label for="city">Абсолютная звездная величина:</label>
+		              от <input type="text" name="yFrom"> до <input type="text" name="yFo">
+           
+        </p>
+ 		 <p>
+		  <label for="yFrom">Спектральный класс: </label>
+          <input type="text" name="structure">
+        </p>
+        <input type="button" value="Найти">		
+	</form>	
+</details>
+<details>
+    <summary>Сортировка</summary>
+    <form>
+	  <p>
+          Первый уровень:
+          <select name="sortFirst">
+            <option value="0">Нет</option>
+            <option value="1">Название</option>
+            <!--<option value="2">Светимость</option>
+            <option value="3">Температура</option>-->
+            <option value="4">Абсолютная звездная величина</option>
+			<option value="5">Спектральный класс</option>
+          </select>
+          по убыванию? <input type="checkbox" name="descFirst">
+        </p>  
+        <p>
+          Второй уровень:
+		  <select name="sortSecond">
+            <option value="0">Нет</option>
+            <option value="1">Название</option>
+            <!--<option value="2">Светимость</option>
+            <option value="3">Температура</option>-->
+            <option value="4">Абсолютная звездная величина</option>
+			<option value="5">Спектральный класс</option>
+          </select>
+          по убыванию? <input type="checkbox" name="descSecond">
+        </p>
+        <p>
+          Третий уровень:
+          <select name="sortThird">
+            <option value="0">Нет</option>
+            <option value="1">Название</option>
+            <!--<option value="2">Светимость</option>
+            <option value="3">Температура</option>-->
+            <option value="4">Абсолютная звездная величина</option>
+			<option value="5">Спектральный класс</option>
+          </select>
+          по убыванию? <input type="checkbox" name="descThird">
+        </p>
+      <input type="button" value="Сортировать">		
+	</form>	
+</details>
+</div>
+<br>
+<br>
+<br>
+<table border="" align="center">
+<tbody align="left">
+<tr align="center"><th>Common name</th><th>Abs Magnitude</th><th>Spectral Type</th></tr>
+<tr>
+<td>Proxima Centauri</td><td>  15.45   </td><td>M5Ve      </td></tr>
+<tr><td><font face="Symbol">a</font> Centauri B      </td> <td>   5.70   </td>  <td>K1V       </td>
+</tr><tr>
+<td>      Rigel Kentaurus       </td> <td>   4.34   </td>  <td>G2V       </td>
+</tr><tr>
+ <td>       Barnard's Star       </td>  <td>  13.24   </td> <td>sdM4      </td>
+</tr><tr>
+<td>          Sirius A          </td>  <td>   1.45   </td> <td>A0m...    </td>
+</tr><tr>
+<td>          Ross 154          </td><td>  13.00   </td> <td>M3.5Ve    </td>
+</tr><tr  >
+<td>      <font face="Symbol">e</font> Eridani       </td><td>   6.18   </td> <td>K2V       </td>
+</tr><tr  >
+<td>       Lacaille 9352        </td> <td>   9.76   </td> <td>M2/M3V    </td>
+</tr><tr  >
+<td>         61 Cygni A         </td>  <td>   7.49   </td> <td>K5V       </td>
+</tr><tr  >
+<td>          Procyon           </td><td>   2.68   </td> <td>F5IV-V    </td>
+</tr><tr  >
+<td>         61 Cygni B         </td>  <td>   8.33   </td>  <td>K7V       </td>
+</tr><tr  >
+<td>       GX Andromedae        </td> <td>  10.33   </td> <td>M1V       </td>
+</tr><tr  >
+<td>        <font face="Symbol">e</font> Indi        </td> <td>   6.89   </td>  <td>K5V       </td>
+</tr><tr  >
+<td>          <font face="Symbol">t</font> Ceti          </td> <td>   5.68   </td> <td>G8V       </td>
+</tr><tr  >
+<td>          YZ Ceti           </td><td>  14.25   </td> <td>M5.5Ve    </td>
+</tr><tr  >
+<td>       Luyten's Star        </td><td>  11.94   </td>  <td>M5        </td>
+</tr><tr  >
+<td>       Kapteyn's Star       </td> <td>  10.89   </td> <td>M0V       </td>
+</tr><tr  >
+<td>       AX Microscopii       </td> <td>   8.71   </td> <td>M1/M2V    </td>
+</tr><tr  >
+<td>         Wolf 1061          </td> <td>  11.95   </td> <td>M4        </td>
+</tr><tr  >
+<td>     van Maanen's Star      </td>  <td>  14.15   </td> <td>DG        </td>
+</tr><tr  >
+ <td>   IL Aquarii or Ross 780   </td><td>  11.80   </td>  <td>M5        </td>
+</tr><tr  >
+<td>      Furuhjelm I- 650      </td> <td>  10.40   </td>  <td>M2Vvar    </td>
+</tr><tr  >
+<td>    o<sup>2</sup> Eridani A     </td> <td>   5.92   </td> <td>K1V       </td>
+</tr><tr  >
+<td>        EV Lacertae         </td> <td>  11.77   </td>  <td>M4.5Ve    </td>
+</tr><tr  >
+<td>       70 Ophiuchi A        </td> <td>   5.50   </td>  <td>K0V SB    </td>
+</tr><tr  >
+<td>           Altair           </td>  <td>   2.20   </td> <td>A7IV-V    </td>
+</tr><tr  >
+<td>      EE Leo or Wolf 358     </td>  <td>  12.89   </td> <td>M4:       </td>
+</tr><tr  >
+ <td>         Wolf 1453          </td> <td>   9.19   </td> <td>M1V        </td>
+</tr><tr  >
+<td>          Wolf 630          </td>  <td>  10.23   </td>  <td>M3Ve       </td>
+</tr><tr  >
+<td><font face="Symbol">s</font> Draconis           </td>  <td>   5.87   </td> <td>K0V        </td>
+</tr><tr  >
+ <td>  <font face="Symbol">h</font> Cassiopei or Wolf 24  </td>  <td>   4.59   </td> <td>G0V SB     </td>
+</tr><tr  >
+ <td>       36 Ophiuchi C        </td> <td>   7.45   </td>  <td>K5V        </td>
+</tr><tr  >
+<td>         BR Piscium         </td><td>  10.10   </td>  <td>M2V        </td>
+</tr><tr  >
+<td>        36 Ophiuchi         </td>  <td>   5.44   </td>  <td>K2:III:    </td>
+</tr><tr  >
+<td>         82 Eridani         </td><td>   5.35   </td> <td>G8V        </td>
+</tr><tr  >
+ <td>       <font face="Symbol">d</font> Pavonis        </td>  <td>   4.62   </td> <td>G5IV-Vvar  </td>
+</tr><tr  >
+ <td>         Wolf 1481          </td> <td>  12.39   </td> <td>M4         </td>
+</tr><tr  >
+<td>         EQ Pegasi          </td>  <td>  11.07   </td><td>M6Ve       </td>
+</tr><tr  >
+<td>   HO Librae or Wolf 562    </td>  <td>  11.58   </td> <td>M5         </td>
+</tr><tr  >
+ <td>   QY Aurigae or Ross 986   </td> <td>  12.63   </td>  <td>M5Ve       </td>
+</tr><tr  >
+<td>          Wolf 629          </td> <td>  12.67   </td>  <td>M4         </td>
+</tr><tr  >
+<td>          Ross 104          </td>  <td>  10.92   </td> <td>M3         </td>
+</tr><tr  >
+<td>         37 Bootis          </td>  <td>   5.41   </td> <td>G8V + K4V  </td>
+</tr><tr  >
+<td>          Ross 775          </td>  <td>  11.19   </td> <td>M4         </td>
+</tr><tr  >
+<td>          Wolf 25           </td>  <td>   6.38   </td><td>K2V        </td>
+</tr><tr  >
+<td>        107 Piscium         </td>  <td>   5.87   </td><td>K1V        </td>
+</tr><tr  >
+<td>   VX Arietis or Ross 556   </td>  <td>  11.16   </td> <td>M3.5Ve     </td>
+</tr><tr>
+<td>         <font face="Symbol">b</font> Hydri         </td> <td>   3.45   </td> <td>G2IV       </td>
+</tr>
+<tr  >
+<td>       <font face="Symbol">m</font> Cassiopei A       </td> <td>   5.78   </td> <td>G5Vp       </td>
+</tr><tr  >
+<td>          Ross 490          </td> <td>   9.64   </td> <td>M1V        </td>
+</tr>
+</tbody>
+</table>
+
+</div>
+
+</body>
+</html>
+
+
